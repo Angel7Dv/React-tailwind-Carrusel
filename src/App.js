@@ -1,23 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import { Carrusel1 } from "./components/Carrusel1";
 
 function App() {
+
+  const images = [
+    "/gallery/02.jpg",
+    "/gallery/03.jpg",
+    "/gallery/04.jpg",
+    "/gallery/05.jpg",
+    "/gallery/06.jpg",
+  ]
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Carrusel1 images={images}/>
+
+      <img src={"/gallery/02.jpg"} />
+
+
     </div>
   );
 }
